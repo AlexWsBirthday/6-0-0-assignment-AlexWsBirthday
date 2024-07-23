@@ -1,20 +1,20 @@
 {
   "testScores": {
     "Linked List Tests": {
-      "LiLiTe1": 0,
-      "LiLiTe2": 0,
-      "LiLiTe3": 0,
-      "LiLiTe4": 0,
-      "LiLiTe5": 0,
-      "LiLiTe6": 0,
-      "LiLiTe7": 0,
-      "LiLiTe8": 0,
-      "LiLiTe9": 0,
-      "LiLiTe10": 0,
-      "LiLiTe11": 0,
-      "LiLiTe12": 0,
+      "LiLiTe1": 1,
+      "LiLiTe2": 1,
+      "LiLiTe3": 1,
+      "LiLiTe4": 1,
+      "LiLiTe5": 1,
+      "LiLiTe6": 1,
+      "LiLiTe7": 1,
+      "LiLiTe8": 1,
+      "LiLiTe9": 1,
+      "LiLiTe10": 1,
+      "LiLiTe11": 1,
+      "LiLiTe12": 1,
       "LiLiTe13": 0,
-      "LiLiTe14": 0
+      "LiLiTe14": 1
     }
   },
   "idToTestNameHash": {
@@ -50,7 +50,7 @@
     "Linked List Tests removeDuplicates - removed duplicates": "LiLiTe14"
   },
   "humanReadable": {
-    "Linked List Tests": "0/14",
-    "finalTestScore": "FINAL SCORE: 0/14"
+    "Linked List Tests": "13/14",
+    "finalTestScore": "FINAL SCORE: 13/14"
   }
 }
