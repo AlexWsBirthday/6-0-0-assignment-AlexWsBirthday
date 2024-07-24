@@ -196,31 +196,61 @@ const reverse = (headNode) => {
 // Question 4: Merge Two Lists
 const mergeLists = (head1, head2) => {
     //returns the head node of the merged linked list
+
+    //must havr a dummy that creates new node
+
+    //used to start new linked lists
+    const dummy = new Node()
+
+    //assign headNode to variable 
     let curr1 = head1
     let curr2 = head2
 
+    let tail = dummy
 
     // let tail1 = null;
+    //why curr1 instead of .next 
+    while (curr1 && curr2) {
+        //comparing the data 
+        if (curr1.data > curr2.data) {
+            tail.next = curr2
+            curr2 = curr2.next
+        } else {
+            tail.next = curr1
+            curr1 = curr1.next
+        }
+        //tail continues on to new node addition, and its aptly named as it will be the tail until the end! thank you Andy
+        tail = tail.next
 
-    // while (curr1) {
-    //     let next1 = head1.next
+    }
 
-    //     if (next1 === null) {
-    //         tail1 = next1
-    //     }
+    //additional if statements
+    if (curr1) tail.next = curr1
+    if (curr2) tail.next = curr2
 
-    //     curr1 = next1
-    // }
-
-    // tail1.next = curr2
-
-    // return head1
+    //returning dummy.next orphans the empty head and returns the new linked list 
+    return dummy.next
 
 };
 
+let firstNode = new Node(1);
+let secondNode = new Node(2);
+let thirdNode = new Node(4);
+firstNode.next = secondNode;
+secondNode.next = thirdNode;
+
+let fourthNode = new Node(1);
+let fifthNode = new Node(3);
+let sixthNode = new Node(4);
+fourthNode.next = fifthNode;
+fifthNode.next = sixthNode;
+
+firstNode = mergeLists(firstNode, fourthNode);
+console.log(firstNode)
+
 // Question 5: Remove duplicates
 //time comp: O(n) // n = # nodes in list, while loop
-//
+// 
 const removeDuplicates = (headNode) => {
     //returns the headNode
     let curr = headNode

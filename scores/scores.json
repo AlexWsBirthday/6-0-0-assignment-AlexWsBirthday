@@ -13,7 +13,7 @@
       "LiLiTe10": 1,
       "LiLiTe11": 1,
       "LiLiTe12": 1,
-      "LiLiTe13": 0,
+      "LiLiTe13": 1,
       "LiLiTe14": 1
     }
   },
@@ -50,7 +50,7 @@
     "Linked List Tests removeDuplicates - removed duplicates": "LiLiTe14"
   },
   "humanReadable": {
-    "Linked List Tests": "13/14",
-    "finalTestScore": "FINAL SCORE: 13/14"
+    "Linked List Tests": "14/14",
+    "finalTestScore": "FINAL SCORE: 14/14"
   }
 }
